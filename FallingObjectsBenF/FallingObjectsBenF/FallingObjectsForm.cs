@@ -28,6 +28,13 @@ namespace FallingObjectsBenF
             //calculate the height
             height = 100 - (0.5 * 9.81 * Math.Pow(time, 2));
 
+            //insert the answer into it's label
+            this.lblAns.Text = Convert.ToString(height) + " meters";
+        }
+
+        private void mniExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
