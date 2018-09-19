@@ -26,7 +26,7 @@ namespace FallingObjectsBenF
             time = double.Parse(txtEnterTime.Text);
 
             //calculate the height
-            height = 
+            height = 100 - (0.5 * 9.81 * Math.Pow(time, 2));
 
         }
     }
