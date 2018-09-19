@@ -31,6 +31,10 @@
             this.lblEnterTime = new System.Windows.Forms.Label();
             this.txtEnterTime = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.mnuFallingObjects = new System.Windows.Forms.MenuStrip();
+            this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFallingObjects.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEnterTime
@@ -54,12 +58,37 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(439, 260);
+            this.btnCalculate.Font = new System.Drawing.Font("Vineta BT", 25F);
+            this.btnCalculate.Location = new System.Drawing.Point(332, 233);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(128, 56);
+            this.btnCalculate.Size = new System.Drawing.Size(374, 56);
             this.btnCalculate.TabIndex = 2;
-            this.btnCalculate.Text = "button1";
+            this.btnCalculate.Text = "CALCULATE!";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            // 
+            // mnuFallingObjects
+            // 
+            this.mnuFallingObjects.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniFile});
+            this.mnuFallingObjects.Location = new System.Drawing.Point(0, 0);
+            this.mnuFallingObjects.Name = "mnuFallingObjects";
+            this.mnuFallingObjects.Size = new System.Drawing.Size(1114, 24);
+            this.mnuFallingObjects.TabIndex = 3;
+            this.mnuFallingObjects.Text = "menuStrip1";
+            // 
+            // mniFile
+            // 
+            this.mniFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniExit});
+            this.mniFile.Name = "mniFile";
+            this.mniFile.Size = new System.Drawing.Size(37, 20);
+            this.mniFile.Text = "File";
+            // 
+            // mniExit
+            // 
+            this.mniExit.Name = "mniExit";
+            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Text = "Exit";
             // 
             // frmFallingObjects
             // 
@@ -69,8 +98,12 @@
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtEnterTime);
             this.Controls.Add(this.lblEnterTime);
+            this.Controls.Add(this.mnuFallingObjects);
+            this.MainMenuStrip = this.mnuFallingObjects;
             this.Name = "frmFallingObjects";
             this.Text = "Falling Objects Ben F";
+            this.mnuFallingObjects.ResumeLayout(false);
+            this.mnuFallingObjects.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,6 +114,9 @@
         private System.Windows.Forms.Label lblEnterTime;
         private System.Windows.Forms.TextBox txtEnterTime;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.MenuStrip mnuFallingObjects;
+        private System.Windows.Forms.ToolStripMenuItem mniFile;
+        private System.Windows.Forms.ToolStripMenuItem mniExit;
     }
 }
 
