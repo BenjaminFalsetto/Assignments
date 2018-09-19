@@ -34,6 +34,7 @@
             this.mnuFallingObjects = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblAns = new System.Windows.Forms.Label();
             this.mnuFallingObjects.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,11 +91,22 @@
             this.mniExit.Size = new System.Drawing.Size(152, 22);
             this.mniExit.Text = "Exit";
             // 
+            // lblAns
+            // 
+            this.lblAns.AutoSize = true;
+            this.lblAns.Font = new System.Drawing.Font("MV Boli", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAns.Location = new System.Drawing.Point(12, 443);
+            this.lblAns.Name = "lblAns";
+            this.lblAns.Size = new System.Drawing.Size(994, 34);
+            this.lblAns.TabIndex = 4;
+            this.lblAns.Text = "The object has fallen x amount of meters since you released the object";
+            // 
             // frmFallingObjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 631);
+            this.Controls.Add(this.lblAns);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtEnterTime);
             this.Controls.Add(this.lblEnterTime);
@@ -117,6 +129,7 @@
         private System.Windows.Forms.MenuStrip mnuFallingObjects;
         private System.Windows.Forms.ToolStripMenuItem mniFile;
         private System.Windows.Forms.ToolStripMenuItem mniExit;
+        private System.Windows.Forms.Label lblAns;
     }
 }
 
