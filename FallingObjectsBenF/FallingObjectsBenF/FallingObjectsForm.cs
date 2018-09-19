@@ -16,5 +16,18 @@ namespace FallingObjectsBenF
         {
             InitializeComponent();
         }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            //declare local variables
+            double time, height;
+
+            //convert the string from the text box to a double
+            time = double.Parse(txtEnterTime.Text);
+
+            //calculate the height
+            height = 
+
+        }
     }
 }
