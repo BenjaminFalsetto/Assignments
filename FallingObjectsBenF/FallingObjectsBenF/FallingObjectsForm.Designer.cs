@@ -47,7 +47,7 @@
             // txtEnterTime
             // 
             this.txtEnterTime.Font = new System.Drawing.Font("ISOCPEUR", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnterTime.Location = new System.Drawing.Point(868, 89);
+            this.txtEnterTime.Location = new System.Drawing.Point(869, 81);
             this.txtEnterTime.Name = "txtEnterTime";
             this.txtEnterTime.Size = new System.Drawing.Size(68, 31);
             this.txtEnterTime.TabIndex = 1;
