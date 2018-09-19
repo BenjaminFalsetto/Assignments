@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FallingObjectsBenF
 {
-    public partial class Form1 : Form
+    public partial class frmFallingObjects : Form
     {
-        public Form1()
+        public frmFallingObjects()
         {
             InitializeComponent();
         }
