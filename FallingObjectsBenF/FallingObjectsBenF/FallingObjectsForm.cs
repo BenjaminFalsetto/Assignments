@@ -49,7 +49,7 @@ namespace FallingObjectsBenF
             //object to hit the ground
             if (time > MAXTIME)
             {
-                //if the time exceeds MAXTIME, display a message box onsxreen -
+                //if the time exceeds MAXTIME, display a message box onscreen -
                 //telling the user that the object has already hit the ground
                 MessageBox.Show("The object has already hit the ground");
             }
