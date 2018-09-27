@@ -37,11 +37,11 @@ namespace FallingObjectsBenF
 
             //textbox numerical error checking
 
-            //looking to see if text box is empty
+            //looking to see if textbox is empty
             if (txtEnterTime.Text.Trim() == string.Empty)
             {
-                //if the text box is empty, display a message box onscreen -
-                //telling the user that the text box is empty
+                //if the textbox is empty, display a message box on screen -
+                //telling the user that the textbox is empty
                 MessageBox.Show("Please enter something in the textbox");
             }
 
@@ -49,7 +49,7 @@ namespace FallingObjectsBenF
             //object to hit the ground
             if (time > MAXTIME)
             {
-                //if the time exceeds MAXTIME, display a message box onscreen -
+                //if the time exceeds MAXTIME, display a message box on screen -
                 //telling the user that the object has already hit the ground
                 MessageBox.Show("The object has already hit the ground");
             }
@@ -60,7 +60,7 @@ namespace FallingObjectsBenF
                 //input a time value within the given parameters
                 MessageBox.Show("Error. Please enter a number between 0 and 4.514");
             }
-            //looling to see if the time is less than 0
+            //looking to see if the time is less than 0
             if (time < 0)
             {
                 //if the time is less than 0, tell the user to enter a valid value
@@ -80,7 +80,7 @@ namespace FallingObjectsBenF
                 this.lblAns.Show();
             }
 
-                //convert the string from the text box to a double
+                //convert the string from the textbox to a double
                 time = Double.Parse(txtEnterTime.Text);
             
             //calculate the height
