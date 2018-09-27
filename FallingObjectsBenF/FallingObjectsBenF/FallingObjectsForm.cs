@@ -106,13 +106,13 @@ namespace FallingObjectsBenF
         {
             //textbox alphabetical error checking
 
-            //checking to see if a letter was inputed
+            //checking to see if a letter was inputted
             if (System.Text.RegularExpressions.Regex.IsMatch(txtEnterTime.Text, "[^0-9]"))
             {
-                //if a letter was inputed, tell the user that only numbers are accepted
+                //if a letter was inputted, tell the user that only numbers are accepted
                 MessageBox.Show("Please enter only numbers.");
                 
-                //clear the textbox if a letter was inputed
+                //clear the textbox if a letter was inputted
                 txtEnterTime.Text = txtEnterTime.Text.Remove(txtEnterTime.Text.Length - 1);
             }
         }
