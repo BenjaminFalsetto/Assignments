@@ -107,7 +107,7 @@ namespace FallingObjectsBenF
             //textbox alphabetical error checking
 
             //checking to see if a letter was inputted
-            if (System.Text.RegularExpressions.Regex.IsMatch(txtEnterTime.Text, "[^9-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtEnterTime.Text, "[^0-9]"))
             {
                 //if a letter was inputted, tell the user that only numbers are accepted
                 MessageBox.Show("Please enter only numbers.");
