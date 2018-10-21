@@ -54,8 +54,13 @@
             this.chkGreenPepper = new System.Windows.Forms.CheckBox();
             this.chkAnchovies = new System.Windows.Forms.CheckBox();
             this.chkOlives = new System.Windows.Forms.CheckBox();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.françaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniEng = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniFr = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniIt = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniSp = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniRu = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblOr2 = new System.Windows.Forms.Label();
+            this.grbStep2P1 = new System.Windows.Forms.GroupBox();
             this.mnuOptions.SuspendLayout();
             this.grbStep1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumPizzas)).BeginInit();
@@ -66,7 +71,7 @@
             // 
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.Location = new System.Drawing.Point(27, 47);
+            this.lblHeader.Location = new System.Drawing.Point(332, 47);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(320, 25);
             this.lblHeader.TabIndex = 0;
@@ -79,7 +84,7 @@
             this.languageToolStripMenuItem});
             this.mnuOptions.Location = new System.Drawing.Point(0, 0);
             this.mnuOptions.Name = "mnuOptions";
-            this.mnuOptions.Size = new System.Drawing.Size(1254, 24);
+            this.mnuOptions.Size = new System.Drawing.Size(984, 24);
             this.mnuOptions.TabIndex = 1;
             this.mnuOptions.Text = "menuStrip1";
             // 
@@ -94,15 +99,18 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.françaisToolStripMenuItem});
+            this.mniEng,
+            this.mniFr,
+            this.mniIt,
+            this.mniSp,
+            this.mniRu});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "Language";
@@ -241,6 +249,7 @@
             // 
             // grbStep2
             // 
+            this.grbStep2.Controls.Add(this.lblOr2);
             this.grbStep2.Controls.Add(this.chkOlives);
             this.grbStep2.Controls.Add(this.chkAnchovies);
             this.grbStep2.Controls.Add(this.chkGreenPepper);
@@ -254,14 +263,14 @@
             this.grbStep2.Controls.Add(this.nudNumPizzas);
             this.grbStep2.Location = new System.Drawing.Point(268, 114);
             this.grbStep2.Name = "grbStep2";
-            this.grbStep2.Size = new System.Drawing.Size(278, 226);
+            this.grbStep2.Size = new System.Drawing.Size(278, 363);
             this.grbStep2.TabIndex = 3;
             this.grbStep2.TabStop = false;
             this.grbStep2.Text = "Step 2";
             // 
             // btnNext2
             // 
-            this.btnNext2.Location = new System.Drawing.Point(102, 197);
+            this.btnNext2.Location = new System.Drawing.Point(86, 125);
             this.btnNext2.Name = "btnNext2";
             this.btnNext2.Size = new System.Drawing.Size(75, 23);
             this.btnNext2.TabIndex = 2;
@@ -347,23 +356,60 @@
             this.chkOlives.Text = "Olives";
             this.chkOlives.UseVisualStyleBackColor = true;
             // 
-            // englishToolStripMenuItem
+            // mniEng
             // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.englishToolStripMenuItem.Text = "English";
+            this.mniEng.Name = "mniEng";
+            this.mniEng.Size = new System.Drawing.Size(180, 22);
+            this.mniEng.Text = "English";
             // 
-            // françaisToolStripMenuItem
+            // mniFr
             // 
-            this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
-            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.françaisToolStripMenuItem.Text = "Français";
+            this.mniFr.Name = "mniFr";
+            this.mniFr.Size = new System.Drawing.Size(180, 22);
+            this.mniFr.Text = "Français";
+            // 
+            // mniIt
+            // 
+            this.mniIt.Name = "mniIt";
+            this.mniIt.Size = new System.Drawing.Size(180, 22);
+            this.mniIt.Text = "Italiano";
+            // 
+            // mniSp
+            // 
+            this.mniSp.Name = "mniSp";
+            this.mniSp.Size = new System.Drawing.Size(180, 22);
+            this.mniSp.Text = "Español";
+            // 
+            // mniRu
+            // 
+            this.mniRu.Name = "mniRu";
+            this.mniRu.Size = new System.Drawing.Size(180, 22);
+            this.mniRu.Text = "Русский";
+            // 
+            // lblOr2
+            // 
+            this.lblOr2.AutoSize = true;
+            this.lblOr2.Location = new System.Drawing.Point(70, 197);
+            this.lblOr2.Name = "lblOr2";
+            this.lblOr2.Size = new System.Drawing.Size(123, 13);
+            this.lblOr2.TabIndex = 11;
+            this.lblOr2.Text = "Or make a custom pizza!";
+            // 
+            // grbStep2P1
+            // 
+            this.grbStep2P1.Location = new System.Drawing.Point(681, 203);
+            this.grbStep2P1.Name = "grbStep2P1";
+            this.grbStep2P1.Size = new System.Drawing.Size(200, 100);
+            this.grbStep2P1.TabIndex = 4;
+            this.grbStep2P1.TabStop = false;
+            this.grbStep2P1.Text = "Custom";
             // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 508);
+            this.ClientSize = new System.Drawing.Size(984, 508);
+            this.Controls.Add(this.grbStep2P1);
             this.Controls.Add(this.grbStep2);
             this.Controls.Add(this.grbStep1);
             this.Controls.Add(this.lblHeader);
@@ -412,8 +458,13 @@
         private System.Windows.Forms.CheckBox chkAnchovies;
         private System.Windows.Forms.CheckBox chkGreenPepper;
         private System.Windows.Forms.CheckBox chkMushrooms;
-        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem françaisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mniEng;
+        private System.Windows.Forms.ToolStripMenuItem mniFr;
+        private System.Windows.Forms.ToolStripMenuItem mniIt;
+        private System.Windows.Forms.ToolStripMenuItem mniSp;
+        private System.Windows.Forms.ToolStripMenuItem mniRu;
+        private System.Windows.Forms.Label lblOr2;
+        private System.Windows.Forms.GroupBox grbStep2P1;
     }
 }
 
