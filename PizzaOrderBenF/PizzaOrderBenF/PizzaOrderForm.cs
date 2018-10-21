@@ -19,6 +19,7 @@ namespace PizzaOrderBenF
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //close the form when clicked
             this.Close();
         }
     }
