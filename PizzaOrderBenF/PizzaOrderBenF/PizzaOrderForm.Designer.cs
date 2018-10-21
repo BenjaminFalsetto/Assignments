@@ -43,7 +43,7 @@
             this.radNl = new System.Windows.Forms.RadioButton();
             this.radNS = new System.Windows.Forms.RadioButton();
             this.radNB = new System.Windows.Forms.RadioButton();
-            this.radQb = new System.Windows.Forms.RadioButton();
+            this.radQc = new System.Windows.Forms.RadioButton();
             this.lblProvStep1 = new System.Windows.Forms.Label();
             this.radOn = new System.Windows.Forms.RadioButton();
             this.btnNext1 = new System.Windows.Forms.Button();
@@ -95,6 +95,7 @@
             // 
             // mnuOptions
             // 
+            this.mnuOptions.BackColor = System.Drawing.Color.Transparent;
             this.mnuOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mniFile,
             this.languageToolStripMenuItem});
@@ -167,7 +168,7 @@
             this.grbStep1.Controls.Add(this.radNl);
             this.grbStep1.Controls.Add(this.radNS);
             this.grbStep1.Controls.Add(this.radNB);
-            this.grbStep1.Controls.Add(this.radQb);
+            this.grbStep1.Controls.Add(this.radQc);
             this.grbStep1.Controls.Add(this.lblProvStep1);
             this.grbStep1.Controls.Add(this.radOn);
             this.grbStep1.Controls.Add(this.btnNext1);
@@ -222,16 +223,16 @@
             this.radNB.Text = "New Brunswick";
             this.radNB.UseVisualStyleBackColor = true;
             // 
-            // radQb
+            // radQc
             // 
-            this.radQb.AutoSize = true;
-            this.radQb.Location = new System.Drawing.Point(6, 56);
-            this.radQb.Name = "radQb";
-            this.radQb.Size = new System.Drawing.Size(63, 17);
-            this.radQb.TabIndex = 4;
-            this.radQb.TabStop = true;
-            this.radQb.Text = "Quebec";
-            this.radQb.UseVisualStyleBackColor = true;
+            this.radQc.AutoSize = true;
+            this.radQc.Location = new System.Drawing.Point(6, 56);
+            this.radQc.Name = "radQc";
+            this.radQc.Size = new System.Drawing.Size(63, 17);
+            this.radQc.TabIndex = 4;
+            this.radQc.TabStop = true;
+            this.radQc.Text = "Quebec";
+            this.radQc.UseVisualStyleBackColor = true;
             // 
             // lblProvStep1
             // 
@@ -316,9 +317,9 @@
             this.grbS3P1Reg.Controls.Add(this.radS3P1Vegetarian);
             this.grbS3P1Reg.Controls.Add(this.radS3P1MeatLovers);
             this.grbS3P1Reg.Controls.Add(this.radS3P1Cheese);
-            this.grbS3P1Reg.Location = new System.Drawing.Point(0, 78);
+            this.grbS3P1Reg.Location = new System.Drawing.Point(1, 216);
             this.grbS3P1Reg.Name = "grbS3P1Reg";
-            this.grbS3P1Reg.Size = new System.Drawing.Size(278, 100);
+            this.grbS3P1Reg.Size = new System.Drawing.Size(249, 100);
             this.grbS3P1Reg.TabIndex = 4;
             this.grbS3P1Reg.TabStop = false;
             this.grbS3P1Reg.Text = "Regular Pizza";
@@ -419,9 +420,9 @@
             this.grbS3P2Custom.Controls.Add(this.chkS3P2Pepper);
             this.grbS3P2Custom.Controls.Add(this.chkS3P2GreenPepper);
             this.grbS3P2Custom.Controls.Add(this.chkS3P2Mushrooms);
-            this.grbS3P2Custom.Location = new System.Drawing.Point(0, 184);
+            this.grbS3P2Custom.Location = new System.Drawing.Point(0, 79);
             this.grbS3P2Custom.Name = "grbS3P2Custom";
-            this.grbS3P2Custom.Size = new System.Drawing.Size(278, 135);
+            this.grbS3P2Custom.Size = new System.Drawing.Size(249, 135);
             this.grbS3P2Custom.TabIndex = 4;
             this.grbS3P2Custom.TabStop = false;
             this.grbS3P2Custom.Text = "Custom Pizza";
@@ -513,6 +514,7 @@
             this.btnNext2.TabIndex = 2;
             this.btnNext2.Text = "Next";
             this.btnNext2.UseVisualStyleBackColor = true;
+            this.btnNext2.Click += new System.EventHandler(this.btnNext2_Click);
             // 
             // lblS2InputSize
             // 
@@ -553,7 +555,7 @@
             this.grbStep3.Controls.Add(this.grbS3P2Custom);
             this.grbStep3.Controls.Add(this.radS3Custom);
             this.grbStep3.Controls.Add(this.lblS3RegOrCust);
-            this.grbStep3.Location = new System.Drawing.Point(600, 114);
+            this.grbStep3.Location = new System.Drawing.Point(572, 114);
             this.grbStep3.Name = "grbStep3";
             this.grbStep3.Size = new System.Drawing.Size(249, 349);
             this.grbStep3.TabIndex = 15;
@@ -614,7 +616,7 @@
         private System.Windows.Forms.Label lblProvStep1;
         private System.Windows.Forms.RadioButton radOn;
         private System.Windows.Forms.Button btnNext1;
-        private System.Windows.Forms.RadioButton radQb;
+        private System.Windows.Forms.RadioButton radQc;
         private System.Windows.Forms.RadioButton radMb;
         private System.Windows.Forms.RadioButton radNl;
         private System.Windows.Forms.RadioButton radNS;
