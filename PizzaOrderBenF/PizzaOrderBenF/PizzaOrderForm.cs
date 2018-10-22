@@ -78,7 +78,7 @@ namespace PizzaOrderBenF
         }
         private void btnNext2_Click(object sender, EventArgs e)
         {
-            numPizzas = nudS2NumPizzas.Value;
+            //numPizzas = nudS2NumPizzas.Value;
 
             if (radS2SizeL.Checked == true)
             {
