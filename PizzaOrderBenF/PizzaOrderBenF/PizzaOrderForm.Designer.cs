@@ -50,7 +50,11 @@
             this.lblS1NumPizzas = new System.Windows.Forms.Label();
             this.nudS2NumPizzas = new System.Windows.Forms.NumericUpDown();
             this.grbStep2 = new System.Windows.Forms.GroupBox();
-            this.grbS3P1Reg = new System.Windows.Forms.GroupBox();
+            this.radS2SizeXL = new System.Windows.Forms.RadioButton();
+            this.radS2SizeL = new System.Windows.Forms.RadioButton();
+            this.lblS2InputSize = new System.Windows.Forms.Label();
+            this.btnNext2 = new System.Windows.Forms.Button();
+            this.grbS3P2Reg = new System.Windows.Forms.GroupBox();
             this.radS3P1Hawaiian = new System.Windows.Forms.RadioButton();
             this.radS3P1Combination = new System.Windows.Forms.RadioButton();
             this.radS3P1Vegetarian = new System.Windows.Forms.RadioButton();
@@ -59,7 +63,7 @@
             this.radS3Custom = new System.Windows.Forms.RadioButton();
             this.lblS3RegOrCust = new System.Windows.Forms.Label();
             this.radS3Reg = new System.Windows.Forms.RadioButton();
-            this.grbS3P2Custom = new System.Windows.Forms.GroupBox();
+            this.grbS3P1Custom = new System.Windows.Forms.GroupBox();
             this.chkS3P2NoCheese = new System.Windows.Forms.CheckBox();
             this.chkS3P2Olives = new System.Windows.Forms.CheckBox();
             this.lblS3P2ChooseToppings = new System.Windows.Forms.Label();
@@ -68,18 +72,14 @@
             this.chkS3P2Pepper = new System.Windows.Forms.CheckBox();
             this.chkS3P2GreenPepper = new System.Windows.Forms.CheckBox();
             this.chkS3P2Mushrooms = new System.Windows.Forms.CheckBox();
-            this.btnNext2 = new System.Windows.Forms.Button();
-            this.lblS2InputSize = new System.Windows.Forms.Label();
-            this.radS2SizeL = new System.Windows.Forms.RadioButton();
-            this.radS2SizeXL = new System.Windows.Forms.RadioButton();
             this.grbStep3 = new System.Windows.Forms.GroupBox();
             this.btnNext3 = new System.Windows.Forms.Button();
             this.mnuOptions.SuspendLayout();
             this.grbStep1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudS2NumPizzas)).BeginInit();
             this.grbStep2.SuspendLayout();
-            this.grbS3P1Reg.SuspendLayout();
-            this.grbS3P2Custom.SuspendLayout();
+            this.grbS3P2Reg.SuspendLayout();
+            this.grbS3P1Custom.SuspendLayout();
             this.grbStep3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,31 +135,31 @@
             // mniEng
             // 
             this.mniEng.Name = "mniEng";
-            this.mniEng.Size = new System.Drawing.Size(180, 22);
+            this.mniEng.Size = new System.Drawing.Size(119, 22);
             this.mniEng.Text = "English";
             // 
             // mniFr
             // 
             this.mniFr.Name = "mniFr";
-            this.mniFr.Size = new System.Drawing.Size(180, 22);
+            this.mniFr.Size = new System.Drawing.Size(119, 22);
             this.mniFr.Text = "Français";
             // 
             // mniIt
             // 
             this.mniIt.Name = "mniIt";
-            this.mniIt.Size = new System.Drawing.Size(180, 22);
+            this.mniIt.Size = new System.Drawing.Size(119, 22);
             this.mniIt.Text = "Italiano";
             // 
             // mniSp
             // 
             this.mniSp.Name = "mniSp";
-            this.mniSp.Size = new System.Drawing.Size(180, 22);
+            this.mniSp.Size = new System.Drawing.Size(119, 22);
             this.mniSp.Text = "Español";
             // 
             // mniRu
             // 
             this.mniRu.Name = "mniRu";
-            this.mniRu.Size = new System.Drawing.Size(180, 22);
+            this.mniRu.Size = new System.Drawing.Size(119, 22);
             this.mniRu.Text = "Русский";
             // 
             // grbStep1
@@ -310,19 +310,60 @@
             this.grbStep2.TabStop = false;
             this.grbStep2.Text = "Step 2";
             // 
-            // grbS3P1Reg
+            // radS2SizeXL
             // 
-            this.grbS3P1Reg.Controls.Add(this.radS3P1Hawaiian);
-            this.grbS3P1Reg.Controls.Add(this.radS3P1Combination);
-            this.grbS3P1Reg.Controls.Add(this.radS3P1Vegetarian);
-            this.grbS3P1Reg.Controls.Add(this.radS3P1MeatLovers);
-            this.grbS3P1Reg.Controls.Add(this.radS3P1Cheese);
-            this.grbS3P1Reg.Location = new System.Drawing.Point(1, 216);
-            this.grbS3P1Reg.Name = "grbS3P1Reg";
-            this.grbS3P1Reg.Size = new System.Drawing.Size(249, 100);
-            this.grbS3P1Reg.TabIndex = 4;
-            this.grbS3P1Reg.TabStop = false;
-            this.grbS3P1Reg.Text = "Regular Pizza";
+            this.radS2SizeXL.AutoSize = true;
+            this.radS2SizeXL.Location = new System.Drawing.Point(6, 95);
+            this.radS2SizeXL.Name = "radS2SizeXL";
+            this.radS2SizeXL.Size = new System.Drawing.Size(79, 17);
+            this.radS2SizeXL.TabIndex = 5;
+            this.radS2SizeXL.TabStop = true;
+            this.radS2SizeXL.Text = "Extra Large";
+            this.radS2SizeXL.UseVisualStyleBackColor = true;
+            // 
+            // radS2SizeL
+            // 
+            this.radS2SizeL.AutoSize = true;
+            this.radS2SizeL.Location = new System.Drawing.Point(6, 72);
+            this.radS2SizeL.Name = "radS2SizeL";
+            this.radS2SizeL.Size = new System.Drawing.Size(52, 17);
+            this.radS2SizeL.TabIndex = 4;
+            this.radS2SizeL.TabStop = true;
+            this.radS2SizeL.Text = "Large";
+            this.radS2SizeL.UseVisualStyleBackColor = true;
+            // 
+            // lblS2InputSize
+            // 
+            this.lblS2InputSize.AutoSize = true;
+            this.lblS2InputSize.Location = new System.Drawing.Point(6, 56);
+            this.lblS2InputSize.Name = "lblS2InputSize";
+            this.lblS2InputSize.Size = new System.Drawing.Size(104, 13);
+            this.lblS2InputSize.TabIndex = 3;
+            this.lblS2InputSize.Text = "Large or extra large?";
+            // 
+            // btnNext2
+            // 
+            this.btnNext2.Location = new System.Drawing.Point(102, 118);
+            this.btnNext2.Name = "btnNext2";
+            this.btnNext2.Size = new System.Drawing.Size(75, 23);
+            this.btnNext2.TabIndex = 2;
+            this.btnNext2.Text = "Next";
+            this.btnNext2.UseVisualStyleBackColor = true;
+            this.btnNext2.Click += new System.EventHandler(this.btnNext2_Click);
+            // 
+            // grbS3P2Reg
+            // 
+            this.grbS3P2Reg.Controls.Add(this.radS3P1Hawaiian);
+            this.grbS3P2Reg.Controls.Add(this.radS3P1Combination);
+            this.grbS3P2Reg.Controls.Add(this.radS3P1Vegetarian);
+            this.grbS3P2Reg.Controls.Add(this.radS3P1MeatLovers);
+            this.grbS3P2Reg.Controls.Add(this.radS3P1Cheese);
+            this.grbS3P2Reg.Location = new System.Drawing.Point(1, 216);
+            this.grbS3P2Reg.Name = "grbS3P2Reg";
+            this.grbS3P2Reg.Size = new System.Drawing.Size(249, 100);
+            this.grbS3P2Reg.TabIndex = 4;
+            this.grbS3P2Reg.TabStop = false;
+            this.grbS3P2Reg.Text = "Regular Pizza";
             // 
             // radS3P1Hawaiian
             // 
@@ -382,7 +423,7 @@
             // radS3Custom
             // 
             this.radS3Custom.AutoSize = true;
-            this.radS3Custom.Location = new System.Drawing.Point(6, 55);
+            this.radS3Custom.Location = new System.Drawing.Point(6, 32);
             this.radS3Custom.Name = "radS3Custom";
             this.radS3Custom.Size = new System.Drawing.Size(60, 17);
             this.radS3Custom.TabIndex = 14;
@@ -402,7 +443,7 @@
             // radS3Reg
             // 
             this.radS3Reg.AutoSize = true;
-            this.radS3Reg.Location = new System.Drawing.Point(6, 32);
+            this.radS3Reg.Location = new System.Drawing.Point(6, 52);
             this.radS3Reg.Name = "radS3Reg";
             this.radS3Reg.Size = new System.Drawing.Size(62, 17);
             this.radS3Reg.TabIndex = 12;
@@ -410,22 +451,22 @@
             this.radS3Reg.Text = "Regular";
             this.radS3Reg.UseVisualStyleBackColor = true;
             // 
-            // grbS3P2Custom
+            // grbS3P1Custom
             // 
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2NoCheese);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2Olives);
-            this.grbS3P2Custom.Controls.Add(this.lblS3P2ChooseToppings);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2Pepperoni);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2Anchovies);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2Pepper);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2GreenPepper);
-            this.grbS3P2Custom.Controls.Add(this.chkS3P2Mushrooms);
-            this.grbS3P2Custom.Location = new System.Drawing.Point(0, 79);
-            this.grbS3P2Custom.Name = "grbS3P2Custom";
-            this.grbS3P2Custom.Size = new System.Drawing.Size(249, 135);
-            this.grbS3P2Custom.TabIndex = 4;
-            this.grbS3P2Custom.TabStop = false;
-            this.grbS3P2Custom.Text = "Custom Pizza";
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2NoCheese);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2Olives);
+            this.grbS3P1Custom.Controls.Add(this.lblS3P2ChooseToppings);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2Pepperoni);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2Anchovies);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2Pepper);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2GreenPepper);
+            this.grbS3P1Custom.Controls.Add(this.chkS3P2Mushrooms);
+            this.grbS3P1Custom.Location = new System.Drawing.Point(0, 79);
+            this.grbS3P1Custom.Name = "grbS3P1Custom";
+            this.grbS3P1Custom.Size = new System.Drawing.Size(249, 135);
+            this.grbS3P1Custom.TabIndex = 4;
+            this.grbS3P1Custom.TabStop = false;
+            this.grbS3P1Custom.Text = "Custom Pizza";
             // 
             // chkS3P2NoCheese
             // 
@@ -506,53 +547,12 @@
             this.chkS3P2Mushrooms.Text = "Mushrooms";
             this.chkS3P2Mushrooms.UseVisualStyleBackColor = true;
             // 
-            // btnNext2
-            // 
-            this.btnNext2.Location = new System.Drawing.Point(102, 118);
-            this.btnNext2.Name = "btnNext2";
-            this.btnNext2.Size = new System.Drawing.Size(75, 23);
-            this.btnNext2.TabIndex = 2;
-            this.btnNext2.Text = "Next";
-            this.btnNext2.UseVisualStyleBackColor = true;
-            this.btnNext2.Click += new System.EventHandler(this.btnNext2_Click);
-            // 
-            // lblS2InputSize
-            // 
-            this.lblS2InputSize.AutoSize = true;
-            this.lblS2InputSize.Location = new System.Drawing.Point(6, 56);
-            this.lblS2InputSize.Name = "lblS2InputSize";
-            this.lblS2InputSize.Size = new System.Drawing.Size(104, 13);
-            this.lblS2InputSize.TabIndex = 3;
-            this.lblS2InputSize.Text = "Large or extra large?";
-            // 
-            // radS2SizeL
-            // 
-            this.radS2SizeL.AutoSize = true;
-            this.radS2SizeL.Location = new System.Drawing.Point(6, 72);
-            this.radS2SizeL.Name = "radS2SizeL";
-            this.radS2SizeL.Size = new System.Drawing.Size(52, 17);
-            this.radS2SizeL.TabIndex = 4;
-            this.radS2SizeL.TabStop = true;
-            this.radS2SizeL.Text = "Large";
-            this.radS2SizeL.UseVisualStyleBackColor = true;
-            // 
-            // radS2SizeXL
-            // 
-            this.radS2SizeXL.AutoSize = true;
-            this.radS2SizeXL.Location = new System.Drawing.Point(6, 95);
-            this.radS2SizeXL.Name = "radS2SizeXL";
-            this.radS2SizeXL.Size = new System.Drawing.Size(79, 17);
-            this.radS2SizeXL.TabIndex = 5;
-            this.radS2SizeXL.TabStop = true;
-            this.radS2SizeXL.Text = "Extra Large";
-            this.radS2SizeXL.UseVisualStyleBackColor = true;
-            // 
             // grbStep3
             // 
             this.grbStep3.Controls.Add(this.btnNext3);
             this.grbStep3.Controls.Add(this.radS3Reg);
-            this.grbStep3.Controls.Add(this.grbS3P1Reg);
-            this.grbStep3.Controls.Add(this.grbS3P2Custom);
+            this.grbStep3.Controls.Add(this.grbS3P2Reg);
+            this.grbStep3.Controls.Add(this.grbS3P1Custom);
             this.grbStep3.Controls.Add(this.radS3Custom);
             this.grbStep3.Controls.Add(this.lblS3RegOrCust);
             this.grbStep3.Location = new System.Drawing.Point(572, 114);
@@ -570,6 +570,7 @@
             this.btnNext3.TabIndex = 15;
             this.btnNext3.Text = "Next";
             this.btnNext3.UseVisualStyleBackColor = true;
+            this.btnNext3.Click += new System.EventHandler(this.btnNext3_Click);
             // 
             // frmPizzaOrder
             // 
@@ -592,10 +593,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudS2NumPizzas)).EndInit();
             this.grbStep2.ResumeLayout(false);
             this.grbStep2.PerformLayout();
-            this.grbS3P1Reg.ResumeLayout(false);
-            this.grbS3P1Reg.PerformLayout();
-            this.grbS3P2Custom.ResumeLayout(false);
-            this.grbS3P2Custom.PerformLayout();
+            this.grbS3P2Reg.ResumeLayout(false);
+            this.grbS3P2Reg.PerformLayout();
+            this.grbS3P1Custom.ResumeLayout(false);
+            this.grbS3P1Custom.PerformLayout();
             this.grbStep3.ResumeLayout(false);
             this.grbStep3.PerformLayout();
             this.ResumeLayout(false);
@@ -636,11 +637,11 @@
         private System.Windows.Forms.ToolStripMenuItem mniIt;
         private System.Windows.Forms.ToolStripMenuItem mniSp;
         private System.Windows.Forms.ToolStripMenuItem mniRu;
-        private System.Windows.Forms.GroupBox grbS3P2Custom;
+        private System.Windows.Forms.GroupBox grbS3P1Custom;
         private System.Windows.Forms.Label lblS3RegOrCust;
         private System.Windows.Forms.RadioButton radS3Reg;
         private System.Windows.Forms.RadioButton radS3Custom;
-        private System.Windows.Forms.GroupBox grbS3P1Reg;
+        private System.Windows.Forms.GroupBox grbS3P2Reg;
         private System.Windows.Forms.RadioButton radS3P1Cheese;
         private System.Windows.Forms.RadioButton radS3P1Combination;
         private System.Windows.Forms.RadioButton radS3P1Vegetarian;
