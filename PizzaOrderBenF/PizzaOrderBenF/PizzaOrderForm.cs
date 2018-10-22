@@ -22,6 +22,19 @@ namespace PizzaOrderBenF
             InitializeComponent();
             grbStep2.Enabled = false;
             grbStep3.Enabled = false;
+
+            if (radS3Custom.Checked == true)
+            {
+                grbS3P1Custom.Enabled = true;
+                grbS3P1Custom.Enabled = false;
+                this.Refresh();
+            }
+            else
+            {
+                grbS3P2Reg.Enabled = true;
+                grbS3P1Custom.Enabled = false;
+                this.Refresh();
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,9 +45,8 @@ namespace PizzaOrderBenF
 
         private void btnNext1_Click(object sender, EventArgs e)
         {
-            //disable the groupbox
-
-            //check which province the user is in
+            //check which province the user is in then set the province tax
+            //disable this grb and enable the next
             if (radOn.Checked == true)
             {
                 provTax = PROV_TAX_ON;
@@ -73,25 +85,57 @@ namespace PizzaOrderBenF
             }
             else
             {
+                //ask the user to input their province
                 MessageBox.Show("Please state your province of residance");
             }
         }
         private void btnNext2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //numPizzas = nudS2NumPizzas.Value;
+=======
+            //set numPizzas to however many pizzas the user wants
+            numPizzas = (double)nudS2NumPizzas.Value;
+>>>>>>> a593915cda6506591efb92a52633872c24f8e18c
 
+            //check size and set price
+            //disable this grb and enable the next
             if (radS2SizeL.Checked == true)
             {
                 pizzaSizeCost = 9.99;
+                grbStep2.Enabled = false;
+                grbStep3.Enabled = true;
+                grbS3P2Reg.Enabled = false;
+                grbS3P1Custom.Enabled = false;
             }
             else if (radS2SizeXL.Checked == true)
             {
                 pizzaSizeCost = 12.99;
-
+                grbStep2.Enabled = false;
+                grbStep3.Enabled = true;
+                grbS3P2Reg.Enabled = false;
+                grbS3P1Custom.Enabled = false;
             }
             else
             {
                 MessageBox.Show("Please select a size");
+            }
+        }
+        private void btnNext3_Click(object sender, EventArgs e)
+        {
+            //see which kind of order the user wants to make
+            if (radS3Custom.Checked == true)
+            {
+                grbS3P1Custom.Enabled = true;
+            }
+            else if (radS3Reg.Checked == true)
+            {
+                grbS3P2Reg.Enabled = true;
+                grbStep3.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Please enter your order type");
             }
         }
     }
