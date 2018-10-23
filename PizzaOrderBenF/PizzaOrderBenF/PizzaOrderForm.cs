@@ -23,6 +23,7 @@ namespace PizzaOrderBenF
             grbS3P1Custom.Enabled = false;
         }
 
+        private void radS3Custom_CheckedChanged(object sender, EventArgs e)
         {
             /* if (radS3Custom.Checked == true)
              {
