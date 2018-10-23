@@ -430,6 +430,7 @@
             this.radS3Custom.TabStop = true;
             this.radS3Custom.Text = "Custom";
             this.radS3Custom.UseVisualStyleBackColor = true;
+            this.radS3Custom.CheckedChanged += new System.EventHandler(this.radS3Custom_CheckedChanged);
             // 
             // lblS3RegOrCust
             // 
@@ -450,6 +451,7 @@
             this.radS3Reg.TabStop = true;
             this.radS3Reg.Text = "Regular";
             this.radS3Reg.UseVisualStyleBackColor = true;
+            this.radS3Reg.CheckedChanged += new System.EventHandler(this.radS3Reg_CheckedChanged);
             // 
             // grbS3P1Custom
             // 

@@ -17,24 +17,34 @@ namespace PizzaOrderBenF
         const double PROV_TAX_NS = 1.15, PROV_TAX_NL = 15, PROV_TAX_MB = 13;
         double size, provTax, toppingsPrice, pizzaSizeCost, numPizzas;
 
+        private void radS3Reg_CheckedChanged(object sender, EventArgs e)
+        {
+            grbS3P2Reg.Enabled = true;
+            grbS3P1Custom.Enabled = false;
+        }
+
+        {
+            /* if (radS3Custom.Checked == true)
+             {
+                 grbS3P1Custom.Enabled = true;
+                 grbS3P1Custom.Enabled = false;
+                 this.Refresh();
+             }
+             else
+             {
+                 grbS3P2Reg.Enabled = true;
+                 grbS3P1Custom.Enabled = false;
+                 this.Refresh();
+             }*/
+            grbS3P1Custom.Enabled = true;
+            grbS3P2Reg.Enabled = false;
+        }
+
         public frmPizzaOrder()
         {
             InitializeComponent();
             grbStep2.Enabled = false;
             grbStep3.Enabled = false;
-
-            if (radS3Custom.Checked == true)
-            {
-                grbS3P1Custom.Enabled = true;
-                grbS3P1Custom.Enabled = false;
-                this.Refresh();
-            }
-            else
-            {
-                grbS3P2Reg.Enabled = true;
-                grbS3P1Custom.Enabled = false;
-                this.Refresh();
-            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
