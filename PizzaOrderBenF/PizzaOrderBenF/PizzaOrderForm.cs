@@ -102,12 +102,10 @@ namespace PizzaOrderBenF
         }
         private void btnNext2_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             //numPizzas = nudS2NumPizzas.Value;
-=======
             //set numPizzas to however many pizzas the user wants
             numPizzas = (double)nudS2NumPizzas.Value;
->>>>>>> a593915cda6506591efb92a52633872c24f8e18c
 
             //check size and set price
             //disable this grb and enable the next
