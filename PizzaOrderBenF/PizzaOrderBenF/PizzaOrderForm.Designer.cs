@@ -74,6 +74,7 @@
             this.chkS3P2Mushrooms = new System.Windows.Forms.CheckBox();
             this.grbStep3 = new System.Windows.Forms.GroupBox();
             this.btnNext3 = new System.Windows.Forms.Button();
+            this.btnFinished = new System.Windows.Forms.Button();
             this.mnuOptions.SuspendLayout();
             this.grbStep1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudS2NumPizzas)).BeginInit();
@@ -358,6 +359,7 @@
             this.grbS3P2Reg.Controls.Add(this.radS3P1Vegetarian);
             this.grbS3P2Reg.Controls.Add(this.radS3P1MeatLovers);
             this.grbS3P2Reg.Controls.Add(this.radS3P1Cheese);
+            this.grbS3P2Reg.Enabled = false;
             this.grbS3P2Reg.Location = new System.Drawing.Point(1, 216);
             this.grbS3P2Reg.Name = "grbS3P2Reg";
             this.grbS3P2Reg.Size = new System.Drawing.Size(249, 100);
@@ -463,6 +465,7 @@
             this.grbS3P1Custom.Controls.Add(this.chkS3P2Pepper);
             this.grbS3P1Custom.Controls.Add(this.chkS3P2GreenPepper);
             this.grbS3P1Custom.Controls.Add(this.chkS3P2Mushrooms);
+            this.grbS3P1Custom.Enabled = false;
             this.grbS3P1Custom.Location = new System.Drawing.Point(0, 79);
             this.grbS3P1Custom.Name = "grbS3P1Custom";
             this.grbS3P1Custom.Size = new System.Drawing.Size(249, 135);
@@ -574,11 +577,23 @@
             this.btnNext3.UseVisualStyleBackColor = true;
             this.btnNext3.Click += new System.EventHandler(this.btnNext3_Click);
             // 
+            // btnFinished
+            // 
+            this.btnFinished.Location = new System.Drawing.Point(455, 472);
+            this.btnFinished.Name = "btnFinished";
+            this.btnFinished.Size = new System.Drawing.Size(75, 23);
+            this.btnFinished.TabIndex = 16;
+            this.btnFinished.Text = "Finished";
+            this.btnFinished.UseVisualStyleBackColor = true;
+            this.btnFinished.Visible = false;
+            this.btnFinished.Click += new System.EventHandler(this.btnFinished_Click);
+            // 
             // frmPizzaOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 527);
+            this.Controls.Add(this.btnFinished);
             this.Controls.Add(this.grbStep3);
             this.Controls.Add(this.grbStep2);
             this.Controls.Add(this.grbStep1);
@@ -654,6 +669,7 @@
         private System.Windows.Forms.Label lblS2InputSize;
         private System.Windows.Forms.GroupBox grbStep3;
         private System.Windows.Forms.Button btnNext3;
+        private System.Windows.Forms.Button btnFinished;
     }
 }
 
