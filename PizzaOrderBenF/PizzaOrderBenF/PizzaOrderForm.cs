@@ -219,9 +219,11 @@ namespace PizzaOrderBenF
             subTotal = numPizzas * (toppingsPrice + pizzaSizeCost + regPizzaCost);
             tax = provTax * subTotal;
             total = tax + subTotal;
+
+            //create a receipt in a txt file and open it.
+            //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file
             string[] lines = { "Thanks for ordering!", "Here is your receipt.", "Your subtotal is $" + (subTotal).ToString("#.##"), "Tax is $" + (tax).ToString("#.##"), "Your total is $" + (total).ToString("#.##"), };
-            // WriteAllLines creates a file, writes a collection of strings to the file,
-            // and then closes the file.  You do NOT need to call Flush() or Close().
+            // WriteAllLines creates a file, writes a collection of strings to the file
             System.IO.File.WriteAllLines(@"PizzaOrderReceipt.txt", lines);
             System.Diagnostics.Process.Start("PizzaOrderReceipt.txt");
         }
