@@ -32,12 +32,6 @@
             this.mnuOptions = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniEng = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniFr = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniIt = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniSp = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniRu = new System.Windows.Forms.ToolStripMenuItem();
             this.grbStep1 = new System.Windows.Forms.GroupBox();
             this.radMb = new System.Windows.Forms.RadioButton();
             this.radNl = new System.Windows.Forms.RadioButton();
@@ -98,8 +92,7 @@
             // 
             this.mnuOptions.BackColor = System.Drawing.Color.Transparent;
             this.mnuOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniFile,
-            this.languageToolStripMenuItem});
+            this.mniFile});
             this.mnuOptions.Location = new System.Drawing.Point(0, 0);
             this.mnuOptions.Name = "mnuOptions";
             this.mnuOptions.Size = new System.Drawing.Size(984, 24);
@@ -117,51 +110,9 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // languageToolStripMenuItem
-            // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniEng,
-            this.mniFr,
-            this.mniIt,
-            this.mniSp,
-            this.mniRu});
-            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.languageToolStripMenuItem.Text = "Language";
-            // 
-            // mniEng
-            // 
-            this.mniEng.Name = "mniEng";
-            this.mniEng.Size = new System.Drawing.Size(119, 22);
-            this.mniEng.Text = "English";
-            // 
-            // mniFr
-            // 
-            this.mniFr.Name = "mniFr";
-            this.mniFr.Size = new System.Drawing.Size(119, 22);
-            this.mniFr.Text = "Français";
-            // 
-            // mniIt
-            // 
-            this.mniIt.Name = "mniIt";
-            this.mniIt.Size = new System.Drawing.Size(119, 22);
-            this.mniIt.Text = "Italiano";
-            // 
-            // mniSp
-            // 
-            this.mniSp.Name = "mniSp";
-            this.mniSp.Size = new System.Drawing.Size(119, 22);
-            this.mniSp.Text = "Español";
-            // 
-            // mniRu
-            // 
-            this.mniRu.Name = "mniRu";
-            this.mniRu.Size = new System.Drawing.Size(119, 22);
-            this.mniRu.Text = "Русский";
             // 
             // grbStep1
             // 
@@ -626,7 +577,6 @@
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.MenuStrip mnuOptions;
         private System.Windows.Forms.ToolStripMenuItem mniFile;
-        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.GroupBox grbStep1;
         private System.Windows.Forms.Label lblS1NumPizzas;
@@ -649,11 +599,6 @@
         private System.Windows.Forms.CheckBox chkS3P2Anchovies;
         private System.Windows.Forms.CheckBox chkS3P2GreenPepper;
         private System.Windows.Forms.CheckBox chkS3P2Mushrooms;
-        private System.Windows.Forms.ToolStripMenuItem mniEng;
-        private System.Windows.Forms.ToolStripMenuItem mniFr;
-        private System.Windows.Forms.ToolStripMenuItem mniIt;
-        private System.Windows.Forms.ToolStripMenuItem mniSp;
-        private System.Windows.Forms.ToolStripMenuItem mniRu;
         private System.Windows.Forms.GroupBox grbS3P1Custom;
         private System.Windows.Forms.Label lblS3RegOrCust;
         private System.Windows.Forms.RadioButton radS3Reg;

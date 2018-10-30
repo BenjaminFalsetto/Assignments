@@ -211,6 +211,7 @@ namespace PizzaOrderBenF
                 regPizzaCost = 10;
                 toppingsPrice = 0;
             }
+            grbStep3.Enabled = false;
             btnFinished.Show();
         }
         private void btnFinished_Click(object sender, EventArgs e)
