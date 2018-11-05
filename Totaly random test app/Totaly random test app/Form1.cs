@@ -22,11 +22,15 @@ namespace Totaly_random_test_app
 
         private void button1_Click(object sender, EventArgs e)
         {
+            FirstEverFunction();
             frm2 = new Form2();
             this.Hide();
             frm2.ShowDialog();
             this.Close();
-
+        }
+        public void FirstEverFunction()
+        {
+            MessageBox.Show("Hello, World!");
         }
     }
 }
