@@ -40,5 +40,9 @@ namespace Totaly_random_test_app
         {
 
         }
+        private void Function1()
+        {
+
+        }
     }
 }
