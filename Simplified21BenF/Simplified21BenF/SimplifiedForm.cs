@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Simplified21BenF
 {
-    public partial class Form1 : Form
+    public partial class frmSimplified21 : Form
     {
-        public Form1()
+        public frmSimplified21()
         {
             InitializeComponent();
         }

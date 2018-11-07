@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Simplified21BenF
 {
-    static class Program
+    static class frmSimplified21
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace Simplified21BenF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmSimplified21());
         }
     }
 }
