@@ -143,7 +143,7 @@ namespace SimplifiedBenF
         {
             dealerNextCard = randomCardGenerator.Next(1, 10 + 1);
             dealerTotal = dealerTotal + dealerNextCard;
-            CheckDealerTotal();
+            //CheckDealerTotal();
             CheckDealerHit();
         }
         
@@ -162,22 +162,13 @@ namespace SimplifiedBenF
         }
         private void CheckDealerTotal()
         {
-            if (dealerTotal == 21)
-            {
-                MessageBox.Show("Dealer has blackjack");
-                btnHit.Visible = false;
-                btnStand.Visible = false;
-                lstPlayerCards.Visible = false;
-                lblPlayerCards.Visible = false;
-                lblPlayerTotal.Visible = false;
-                lstPlayerCards.Items.Clear();
-                playerTotal = 0;
-                dealerTotal = 0;
-                btnNewGame.Visible = true;
-            }
-            else if (dealerTotal > 21)
+            if (dealerTotal > 21)
             {
                 DealerBust();
+            }
+            else
+            {
+                CheckDealerHit();
             }
         }
 
