@@ -100,14 +100,14 @@
             // mniNewGame
             // 
             this.mniNewGame.Name = "mniNewGame";
-            this.mniNewGame.Size = new System.Drawing.Size(180, 22);
+            this.mniNewGame.Size = new System.Drawing.Size(132, 22);
             this.mniNewGame.Text = "New Game";
             this.mniNewGame.Click += new System.EventHandler(this.mniNewGame_Click);
             // 
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(180, 22);
+            this.mniExit.Size = new System.Drawing.Size(132, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
