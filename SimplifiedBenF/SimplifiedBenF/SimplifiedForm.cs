@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Benjamin Falsetto
+ * Created on: 2018/11/05
+ * Created for: ICS3U Programming
+ * Assignment 6b - Simplified 21
+ * This program allows a user to play a simplified version of blackjack
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
