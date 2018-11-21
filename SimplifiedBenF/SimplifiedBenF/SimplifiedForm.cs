@@ -81,7 +81,7 @@ namespace SimplifiedBenF
             playerNextCard = randomCardGenerator.Next(1, 10 + 1);
             lstPlayerCards.Items.Add(playerNextCard);
             playerTotal = playerTotal + playerNextCard;
-            CheckPlayerTotal();
+            //CheckPlayerTotal();
         }
 
         private void btnStand_Click(object sender, EventArgs e)
@@ -89,6 +89,9 @@ namespace SimplifiedBenF
             btnHit.Enabled = false;
             btnStand.Enabled = false;
             CheckDealerHit();
+            CheckPlayerTotal();
+            CheckDealerTotal();
+            DealerFinished();
         }
 
         private void btnNewGame_Click(object sender, EventArgs e)
@@ -152,7 +155,7 @@ namespace SimplifiedBenF
             dealerNextCard = randomCardGenerator.Next(1, 10 + 1);
             dealerTotal = dealerTotal + dealerNextCard;
             //CheckDealerTotal();
-            CheckDealerHit();
+            //CheckDealerHit();
         }
         
         private void DealerBust()
