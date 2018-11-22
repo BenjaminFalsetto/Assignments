@@ -58,7 +58,9 @@ namespace SimplifiedBenF
             lstPlayerCards.Items.Clear();
             btnNewGame.Visible = false;
             btnHit.Visible = true;
+            btnHit.Enabled = true;
             btnStand.Visible = true;
+            btnStand.Enabled = true;
             lblPlayerCards.Visible = true;
             lstPlayerCards.Visible = true;
             lblPlayerTotal.Text = ("Player total");

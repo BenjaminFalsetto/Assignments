@@ -144,6 +144,7 @@
             this.Controls.Add(this.mnuMenu);
             this.MainMenuStrip = this.mnuMenu;
             this.Name = "frmSimplified";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmSimplified_Load);
             this.mnuMenu.ResumeLayout(false);
